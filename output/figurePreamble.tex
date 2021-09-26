@@ -1,0 +1,45 @@
+
+% -----------------------------------------------------------------------
+%                        COLOR CONFIGURATION
+%
+% Notes: Use xcolor-material to set the colors
+% -----------------------------------------------------------------------
+
+\usepackage{xcolor-material}
+\colorlet{MaterialPrimary}{MaterialTeal900}
+\colorlet{MaterialPrimary2}{MaterialTeal800}
+\colorlet{MaterialSecondary}{MaterialTealA700}
+\colorlet{MaterialBackground}{MaterialGrey50}
+\colorlet{MaterialStructure}{MaterialTealA700}
+\colorlet{MaterialSection}{MaterialTeal800}
+\colorlet{MaterialSubsection}{MaterialTeal800}
+\colorlet{MaterialAlert}{MaterialRed900}
+\colorlet{MaterialGreyBackground}{MaterialGrey100}
+\colorlet{MaterialContrast}{MaterialBlue800}
+% Lists colors
+\colorlet{MaterialAlternate1}{MaterialTeal200}
+\colorlet{MaterialAlternate2}{MaterialTeal300}
+% Bubble colors
+\colorlet{MaterialBubbleBase}{MaterialTeal600}
+\colorlet{MaterialBubble1}{MaterialPurple}
+\colorlet{MaterialBubble2}{MaterialBlue}
+\colorlet{MaterialBubble3}{MaterialRed}
+
+
+
+% -----------------------------------------------------------------------
+%                         PLOTS AND TABLES
+%
+% Notes: package svg destroys the mindmap concept grey background gradient (not using)
+% -----------------------------------------------------------------------
+% Graphics
+\usepackage{tikz, pgfplots, pgfplotstable, smartdiagram, booktabs, array, colortbl}
+% Tables
+\usepackage{booktabs, array, colortbl} % recommended:
+\usepackage{array, wrapfig, multirow, tabu} % Tables with native Latex
+
+% Additional settings
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{dateplot}
+\usetikzlibrary{snakes, arrows, mindmap, trees, datavisualization, calc, trees, shadows.blur, positioning}
+\pgfplotsset{compat=1.13}

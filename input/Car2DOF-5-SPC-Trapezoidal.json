@@ -1,0 +1,60 @@
+{
+    "info": "This is the input information for a car-bump simulator",
+
+    "carType": "Car2DOF",
+    "carData":
+    {
+        "carMass": 1085,
+        "wheelMass": 40,
+        "suspensionK" : 10000,
+        "suspensionC": 800,
+        "frontInertia": 780,
+        "pitchInertia": 1100,
+        "antiRollBarK": 25000,
+        "a1": 1.4,
+        "a2": 1.47,
+        "b1": 0.7,
+        "b2": 0.75,
+        "h": 1,
+        
+        "v0": 5,
+        "acc": 0
+        },
+    
+    "tyreType": "SPC",
+    "tyreData":
+    {
+        "kDist": "nonuniform",
+        "tyreK": 150000,
+        "r0": 0.5
+    },
+    
+    "sbType": "trapezoidal",
+    "sbData":
+    {        
+        "L1": 0.1,
+        "L2": 0.18,
+        "L3": 0.1,
+        
+        "h": 0.045,
+        "xshift": 10
+    
+    },
+    
+    "conf":
+    {
+        "solver": "LSODA",
+        
+        "t_step": 1E-3,
+        "t_end": 10,
+        
+        "patchRes": 1E4,
+        
+        "plotProfile": "y",
+        "plotDisp": "y",
+        "plotVelo": "y",
+        "plotForces": "y",
+                
+        "exportResults": "y"
+    }
+}
